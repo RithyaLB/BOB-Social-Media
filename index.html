@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocializePro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">SocializePro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" onclick="toggleProfile()">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="togglePosts()">Posts</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-lg-3 sidebar">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <main class="col-lg-9">
+                <h2>Welcome to SocializePro</h2>
+                <div id="postsSection" style="display: none;">
+                    <!-- Posts will be displayed here -->
+                    <div class="post-container">
+                        <div class="post-image">
+                            <img src="post1.jpg" alt="Post Image">
+                        </div>
+                        <div class="post-content">
+                            <!-- Post content -->
+                            <h3>Post Title</h3>
+                            <p>Post Description</p>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-reel">
+                            <!-- Post reel content -->
+                            <video controls>
+                                <source src="comedy reel.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="post-content">
+                            <!-- Post content -->
+                            <h3>Reel Title</h3>
+                            <p>Reel Description</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Profile Section -->
+            <div class="col-lg-9" id="profileSection" style="display: none;">
+                <div class="profile-container">
+                    <div class="profile-header">
+                        <h1>Rithya L B</h1>
+                        <div class="followers">
+                            <span>Followers: 100</span>
+                            <span>Following: 50</span>
+                            <span>Posts: 20</span>
+                        </div>
+                    </div>
+                    <div class="profile-bio">
+                        <p>Bio: 🌸 Lover of sunshine, smiles, and all things pink! 🌸
+                            🎀 Fashion enthusiast with a heart full of dreams 🎀
+                            💖 Spreading positivity, one post at a time 💖
+                            📸 Capturing life's beautiful moments through my lens 📸.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function toggleProfile() {
+            var profileSection = document.getElementById("profileSection");
+            if (profileSection.style.display === "none") {
+                profileSection.style.display = "block";
+            } else {
+                profileSection.style.display = "none";
+            }
+        }
+
+        function togglePosts() {
+            var postsSection = document.getElementById("postsSection");
+            if (postsSection.style.display === "none") {
+                postsSection.style.display = "block";
+            } else {
+                postsSection.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

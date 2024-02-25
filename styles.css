@@ -1,0 +1,105 @@
+/* Define custom styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Soft off-white background */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    background-color: #f0f0f0; /* Subtle gray background */
+    color: #333; /* Dark gray text color */
+    padding: 50px;
+    padding-left: 40px;
+    margin-left: 0px;
+    border-right: 1px solid #ddd;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: #333; /* Dark gray link color */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #666; /* Dark gray hover color */
+}
+
+.main {
+    padding: 20px;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 992px) {
+    .container-fluid {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-fluid {
+        width: 1170px;
+    }
+}
+
+.profile-container {
+    width: 100%;
+    height: 350px;
+    margin: -200px auto 0;
+    margin-left: 300px;
+    padding: 20px;
+    background-color:pink; /* Slightly lighter gray background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    color: #333;
+}
+
+.followers {
+    margin-top: 10px;
+}
+
+.followers span {
+    margin-right: 10px;
+    color: #666;
+}
+
+.profile-bio p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.post-reel {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.post-reel video {
+    max-width: 250px; 
+    max-height: 250px; 
+}
